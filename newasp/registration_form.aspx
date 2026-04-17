@@ -57,6 +57,7 @@
                 <tr>
                     <td>
                              <asp:Button ID="btnsubmit" runat="server" Text="Submit" />
+                        <asp:Button ID="btnconfirm" runat="server" Text="confirm" />
                         </td>
                     </tr>
                 </table>  
