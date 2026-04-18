@@ -13,28 +13,28 @@
             <table align="center">
                 <tr>
                     <td>
-                        First Name<asp:TextBox ID="txtfname" runat="server" ></asp:TextBox>
+                        First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtfname" runat="server" ></asp:TextBox>
                          <asp:RequiredFieldValidator ID="rfvfname" runat="server" ForeColor="Red"  ErrorMessage="please enter first name" ControlToValidate="txtfname"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="tevfname" runat="server" ForeColor="Red" ErrorMessage="First name must be alphabets and characters length should be 3-20 long" ValidationExpression="^[A-Za-z]{3,20}$" ControlToValidate="txtfname"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
             <tr>
                 <td>
-                     Last Name<asp:TextBox ID="txtlname" runat="server"></asp:TextBox>
+                     Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtlname" runat="server"></asp:TextBox>
                       <asp:RequiredFieldValidator ID="rfvlname" runat="server" ControlToValidate="txtlname" ErrorMessage="please enter last name" ForeColor="Red"></asp:RequiredFieldValidator>
                            <asp:RegularExpressionValidator ID="revlname" runat="server" ForeColor="Red" ErrorMessage="Last name must be alphabets and characters length should be 3-20 long" ValidationExpression="^[A-Za-z]{3,20}$" ControlToValidate="txtlname"></asp:RegularExpressionValidator><br />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                          Email Id<asp:TextBox ID="txtemail" runat="server"></asp:TextBox>
+                          Email Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtemail" runat="server"></asp:TextBox>
                           <asp:RequiredFieldValidator ID="rfvemali" runat="server" ControlToValidate="txtemail" ErrorMessage="please enter EmailId" ForeColor="Red"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="rgvemail" runat="server" ControlToValidate="txtemail" ErrorMessage="please enter valid Email" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator><br />
                         </td>
                     </tr>
                 <tr>
                     <td>
-                             Password<asp:TextBox ID="txtpass" runat="server" Type="PassWord"></asp:TextBox>
+                             Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtpass" runat="server" Type="PassWord"></asp:TextBox>
                              <asp:RequiredFieldValidator ID="rfvpass" runat="server" ControlToValidate="txtpass" ErrorMessage="please enter your  password" ForeColor="Red"></asp:RequiredFieldValidator> <br />
                         </td>
                     </tr>
@@ -47,14 +47,19 @@
                     </tr>
                 <tr>
                     <td>
-                            Mobile number<asp:TextBox ID="txtmobile" runat="server"></asp:TextBox>
+                            Mobile number&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtmobile" runat="server"></asp:TextBox>
                            <asp:RequiredFieldValidator ID="rfvmobile" runat="server" ControlToValidate="txtmobile" ErrorMessage="please enter mobile number" ForeColor="Red"></asp:RequiredFieldValidator><br />
                         </td>
                     </tr>
                 <tr>
-                    <td>
-                            <asp:Button ID="btnsubmit" runat="server" text="submit" />
-                        </td>
+                  <td>
+                  Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtage" runat="server"></asp:TextBox>
+                  <asp:RequiredFieldValidator ID="rfvage" runat="server" ControlToValidate="txtage" ErrorMessage="Age field should not be empty" ForeColor="Red"></asp:RequiredFieldValidator>
+                       <asp:CustomValidator ID="cvage" runat="server" ErrorMessage="age must between 18 and 60" ForeColor="Red" OnServerValidate="cvage_ServerValidate"></asp:CustomValidator>
+                       </td>
+                      </tr>
+                    <tr>
+                    <td><asp:Button ID="btnsubmit" runat="server" text="submit" /></td>
                     </tr>
                 </table>  
         </div>

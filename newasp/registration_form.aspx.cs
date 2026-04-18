@@ -13,5 +13,18 @@ namespace newasp
         {
 
         }
+
+        protected void cvage_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            int age;
+            if(int.TryParse(txtage.Text,out age))
+            {
+                args.IsValid = (age >= 18 && age <= 60);
+            }
+            else
+            {
+                args.IsValid = false;
+            }
+        }
     }
 }
