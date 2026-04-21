@@ -70,6 +70,7 @@
     <Content Include="registration_form.aspx" />
     <Content Include="Web.config" />
     <Content Include="movieticketbooking.aspx" />
+    <Content Include="asp.netpagelifecycle.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +87,13 @@
     </Compile>
     <Compile Include="registration_form.aspx.designer.cs">
       <DependentUpon>registration_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp.netpagelifecycle.aspx.cs">
+      <DependentUpon>asp.netpagelifecycle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp.netpagelifecycle.aspx.designer.cs">
+      <DependentUpon>asp.netpagelifecycle.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
