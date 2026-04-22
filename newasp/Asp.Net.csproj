@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="qslogin.aspx" />
+    <Content Include="querystring.aspx" />
     <Content Include="registration_form.aspx" />
     <Content Include="viewstate.aspx" />
     <Content Include="Web.config" />
@@ -81,6 +83,20 @@
     </Compile>
     <Compile Include="movieticketbooking.aspx.designer.cs">
       <DependentUpon>movieticketbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="qslogin.aspx.cs">
+      <DependentUpon>qslogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="qslogin.aspx.designer.cs">
+      <DependentUpon>qslogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="querystring.aspx.cs">
+      <DependentUpon>querystring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="querystring.aspx.designer.cs">
+      <DependentUpon>querystring.aspx</DependentUpon>
     </Compile>
     <Compile Include="registration_form.aspx.cs">
       <DependentUpon>registration_form.aspx</DependentUpon>
