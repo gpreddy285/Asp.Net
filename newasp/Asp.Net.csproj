@@ -74,6 +74,7 @@
     <Content Include="registration_form.aspx" />
     <Content Include="session.aspx" />
     <Content Include="session2.aspx" />
+    <Content Include="sessionstate.aspx" />
     <Content Include="viewstate.aspx" />
     <Content Include="Web.config" />
     <Content Include="movieticketbooking.aspx" />
@@ -143,6 +144,13 @@
     </Compile>
     <Compile Include="session2.aspx.designer.cs">
       <DependentUpon>session2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sessionstate.aspx.cs">
+      <DependentUpon>sessionstate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sessionstate.aspx.designer.cs">
+      <DependentUpon>sessionstate.aspx</DependentUpon>
     </Compile>
     <Compile Include="viewstate.aspx.cs">
       <DependentUpon>viewstate.aspx</DependentUpon>
