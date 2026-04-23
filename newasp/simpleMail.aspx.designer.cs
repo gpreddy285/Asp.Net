@@ -11,7 +11,7 @@ namespace newasp
 {
 
 
-    public partial class cookies
+    public partial class simpleMail
     {
 
         /// <summary>
@@ -24,57 +24,48 @@ namespace newasp
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtusername control.
+        /// txtfrom control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtusername;
+        protected global::System.Web.UI.WebControls.TextBox txtfrom;
 
         /// <summary>
-        /// rfvuser control.
+        /// txtsub control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvuser;
+        protected global::System.Web.UI.WebControls.TextBox txtsub;
 
         /// <summary>
-        /// revuser control.
+        /// txtto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revuser;
+        protected global::System.Web.UI.WebControls.TextBox txtto;
 
         /// <summary>
-        /// txtpass control.
+        /// txtarea control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtpass;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtarea;
 
         /// <summary>
-        /// rfvpass control.
+        /// btnsend control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvpass;
-
-        /// <summary>
-        /// btnsubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsubmit;
+        protected global::System.Web.UI.WebControls.Button btnsend;
     }
 }

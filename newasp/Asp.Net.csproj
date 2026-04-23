@@ -77,6 +77,7 @@
     <Content Include="session.aspx" />
     <Content Include="session2.aspx" />
     <Content Include="sessionstate.aspx" />
+    <Content Include="simpleMail.aspx" />
     <Content Include="viewstate.aspx" />
     <Content Include="Web.config" />
     <Content Include="movieticketbooking.aspx" />
@@ -163,6 +164,13 @@
     </Compile>
     <Compile Include="sessionstate.aspx.designer.cs">
       <DependentUpon>sessionstate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="simpleMail.aspx.cs">
+      <DependentUpon>simpleMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="simpleMail.aspx.designer.cs">
+      <DependentUpon>simpleMail.aspx</DependentUpon>
     </Compile>
     <Compile Include="viewstate.aspx.cs">
       <DependentUpon>viewstate.aspx</DependentUpon>

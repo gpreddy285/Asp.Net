@@ -11,7 +11,7 @@
         <div>
             <table>
                 <tr>
-                    <td>Welcome</td>
+                    <td>Welcome </td>
                 </tr>
                 <tr>
                     <td>Your first name :</td>
